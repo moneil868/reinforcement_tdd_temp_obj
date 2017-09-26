@@ -9,7 +9,6 @@ class TestTemperature < MiniTest::Test
   end
 
   def test_convert_celsius_at_freezing
-    skip
     assert_equal 0, Temperature.new({:f => 32}).to_celsius
   end
 

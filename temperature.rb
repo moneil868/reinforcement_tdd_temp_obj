@@ -12,5 +12,10 @@ class Temperature
     end
   end
 
+  def to_celsius
+     celcius = (@temp_fahrenheit - 32) * 5/9
+     return celcius
+  end
+
 
 end
