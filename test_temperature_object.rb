@@ -13,7 +13,6 @@ class TestTemperature < MiniTest::Test
   end
 
   def test_convert_celsius_at_boiling
-    skip
     assert_equal 100, Temperature.new({:f => 212}).to_celsius
   end
 
@@ -23,7 +22,6 @@ class TestTemperature < MiniTest::Test
   end
 
   def test_convert_celsius_at_any_temperature
-    skip
     assert_equal 20, Temperature.new({:f => 68}).to_celsius
   end
 
