@@ -26,7 +26,6 @@ class TestTemperature < MiniTest::Test
   end
 
   def test_initialize_celsius
-    skip
     assert_equal 50, Temperature.new({:c => 50}).to_celsius
   end
 
